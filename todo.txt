@@ -17,8 +17,7 @@ User Stories
 - marketing copy
 
 Engineering Tasks:
-* automated build
 * static code analysis, lint DONE
-- continuous integration
+- continuous integration (if done all the time the build never fails)
 - server-side testing
 - client-side testing
