@@ -1,16 +1,7 @@
-// Build automation, the code builds itself, don't rely on ide or the browser, essential for continuous integration.
+task("default", ["lint"]);
 
-// default task to catch and test issues
-task("default", [], function(){
-  console.log("default");
-});
-
-desc("Example");
-task("example", ["dependency"],function() {
-  console.log("example task");
-});
-
-// It runs this dependency before the task
-task("dependency", function( ) {
-  console.log("dependency");
+desc("Lint everything");
+task("lint", [],function() {
+  var lint = require("./build/lint/lint_runner.js");
+  lint.validateFile("jakefile.js", {}, {});
 });
