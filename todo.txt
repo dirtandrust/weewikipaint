@@ -18,7 +18,7 @@ User Stories
 
 Engineering Tasks:
 * automated build
-* static code analysis, lint
+* static code analysis, lint DONE
 - continuous integration
 - server-side testing
 - client-side testing
